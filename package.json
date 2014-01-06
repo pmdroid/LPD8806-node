@@ -1,0 +1,35 @@
+{
+  "name": "LPD8806",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "start": "node example.js"
+  },
+  "dependencies": {
+    "spi": "*",
+    "color": "*",
+    "sleep": "*"
+  },
+  "description": "LPD8806 Node library for the Raspberry Pi",
+  "main": "./lib/LPD8806",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pmdroid/LPD8806-node"
+  },
+  "keywords": [
+    "SPI",
+    "LED",
+    "RGB",
+    "LED",
+    "Strip",
+    "LPD8806",
+    "Raspberry",
+    "PI"
+  ],
+  "author": "pmdroid",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/pmdroid/LPD8806-node/issues"
+  }
+}
