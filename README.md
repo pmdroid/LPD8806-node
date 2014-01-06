@@ -1,13 +1,13 @@
 LPD8806-node
 ============
 
-Install:
+Install.
+
     npm install https://github.com/pmdroid/LPD8806-node/archive/0.1.2.tar.gz
+
     var LPD8806 = require('LPD8806');
     LPD8806 = new LPD8806(32, '/dev/spidev0.0');
     LPD8806.fillRGB(0, 0, 255);
-
-    This is all.
 
     Available Funtions:
 
