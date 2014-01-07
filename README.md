@@ -3,7 +3,7 @@ LPD8806-node
 
 Install.
 
-    npm install https://github.com/pmdroid/LPD8806-node/archive/0.1.4.tar.gz
+    npm install lpd8806
 
     var LPD8806 = require('LPD8806');
     LPD8806 = new LPD8806(32, '/dev/spidev0.0');
