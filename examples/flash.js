@@ -3,6 +3,7 @@ var LPD8806 = require('LPD8806');
 // npm install async
 var async = require("async");
 
+var leds = new LPD8806(96, '/dev/spidev1.0');
 
 // Flash ledstrip by manipulation of the color brightness
 function flash(r, g, b, speed){
