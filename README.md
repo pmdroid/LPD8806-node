@@ -6,13 +6,18 @@ LPD8806-node
 - Spi accepts options
 
 Forked to be able to work with Intel galileo
+
 Check /examples for usage examples.
 
 
     npm install git://github.com/v0od0oChild/LPD8806-node.git
 
     var LPD8806 = require('LPD8806');
-    LPD8806 = new LPD8806(32, '/dev/spidev1.0');
+    var ledstrip = new LPD8806(32, '/dev/spidev1.0');
+
+    ledstrip.fillRGB(200,200,200);
+
+
 
     Available Funtions:
 
