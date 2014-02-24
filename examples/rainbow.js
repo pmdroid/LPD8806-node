@@ -27,7 +27,7 @@ function rainbow(brightness){
     }
 
     if (++i >= 384) {
-      i = 0;
+      return;
     }
     setTimeout(performStep, 80);
   }
