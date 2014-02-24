@@ -8,7 +8,6 @@
   "dependencies": {
     "spi": "*",
     "color": "*",
-    "sleep": "*",
     "socket.io": "*"
   },
   "description": "LPD8806 Node library for the Raspberry Pi",
