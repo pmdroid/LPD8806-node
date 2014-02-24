@@ -1,26 +1,30 @@
 LPD8806-node
 ============
 
-Install.
+- Removed synchronous lib sleep
+- Asynchronous examples
+- Spi accepts options
 
-    npm install lpd8806
+Forked to be able to work with Intel galileo
+Check /examples for usage examples.
+
+
+    npm install git://github.com/v0od0oChild/LPD8806-node.git
 
     var LPD8806 = require('LPD8806');
-    LPD8806 = new LPD8806(32, '/dev/spidev0.0');
-    LPD8806.fillRGB(0, 0, 255);
+    LPD8806 = new LPD8806(32, '/dev/spidev1.0');
 
     Available Funtions:
 
     LPD8806.updateBrightness(0.5); //Value must Between 0.0 and 1.0
     LPD8806.update(); //To write the new Buffer
-    LPD8806.fillRGB(0, 0, 255); //ROT, GREEN, BLUE
+    LPD8806.fillRGB(0, 0, 255); //RED, GREEN, BLUE
     LPD8806.fillHSV(0.0, 100.0, 100.0); //HSV Values
     LPD8806.allOFF();
     LPD8806.setPixel(new Color({r: 0, g: 0: b: 255}));
-    LPD8806.setPixelRGB(0, 0, 255); //ROT, GREEN, BLUE
+    LPD8806.setPixelRGB(0, 0, 255); //RED, GREEN, BLUE
     LPD8806.setPixelHSV(0.0, 100.0, 100.0) //HSV Values
     LPD8806.setPixelOff(pixelNumber);
-
 
 The MIT License (MIT)
 
