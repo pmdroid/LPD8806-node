@@ -1,11 +1,10 @@
 var LPD8806 = require('LPD8806');
-
-var leds = new LPD8806(96, '/dev/spidev1.0');
+var ledCount = 96;
+var leds = new LPD8806(ledCount, '/dev/spidev1.0');
 
 /** process.nextTick to avoid blocking it all the time */
 function rainbow(brightness){
 
-  var ledCount = config.ledStripe.ledsNum;
 	var _step = 0;
   var start = 0;
   
@@ -34,4 +33,4 @@ function rainbow(brightness){
   performStep();
 }
 
-rainbow();
+rainbow(0.8);
