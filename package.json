@@ -2,14 +2,11 @@
   "name": "lpd8806",
   "version": "0.2.0",
   "private": false,
-  "scripts": {
-    "start": "node example.js"
-  },
   "dependencies": {
     "spi": "*",
     "color": "*"
   },
-  "description": "LPD8806 Node library for the Raspberry Pi",
+  "description": "LPD8806 NodeJS general library",
   "main": "./lib/LPD8806",
   "devDependencies": {},
   "repository": {
