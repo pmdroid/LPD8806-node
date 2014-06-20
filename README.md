@@ -1,6 +1,6 @@
 # lpd8806-async
 
-Asyncronous Node.js library that implements the LPD8806 protocol.
+Asynchronous Node.js library that implements the LPD8806 protocol.
 
 ## Install
 
