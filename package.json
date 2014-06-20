@@ -1,6 +1,6 @@
 {
   "name": "lpd8806-async",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "private": false,
   "dependencies": {
     "spi": "*",
@@ -11,7 +11,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/pmdroid/LPD8806-node"
+    "url": "https://github.com/muzzley/LPD8806-node"
   },
   "keywords": [
     "SPI",
@@ -26,6 +26,6 @@
   "author": "pmdroid, v0od0oChild",
   "license": "MIT License",
   "bugs": {
-    "url": "https://github.com/pmdroid/LPD8806-node/issues"
+    "url": "https://github.com/muzzley/LPD8806-node/issues"
   }
 }
