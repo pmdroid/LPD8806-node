@@ -1,25 +1,38 @@
-LPD8806-node
-============
+# lpd8806-async
 
-Install.
+Asynchronous Node.js library that implements the LPD8806 protocol.
 
-    npm install lpd8806
+## Install
 
-    var LPD8806 = require('LPD8806');
-    LPD8806 = new LPD8806(32, '/dev/spidev0.0');
-    LPD8806.fillRGB(0, 0, 255);
+    npm install lpd8806-async
 
-    Available Funtions:
+## Run
 
-    LPD8806.updateBrightness(0.5); //Value must Between 0.0 and 1.0
-    LPD8806.update(); //To write the new Buffer
-    LPD8806.fillRGB(0, 0, 255); //ROT, GREEN, BLUE
-    LPD8806.fillHSV(0.0, 100.0, 100.0); //HSV Values
-    LPD8806.allOFF();
-    LPD8806.setPixel(new Color({r: 0, g: 0: b: 255}));
-    LPD8806.setPixelRGB(0, 0, 255); //ROT, GREEN, BLUE
-    LPD8806.setPixelHSV(0.0, 100.0, 100.0) //HSV Values
-    LPD8806.setPixelOff(pixelNumber);
+```
+    var LPD8806 = require('lpd8806-async');
+    var ledstrip = new LPD8806(32, '/dev/spidev1.0');
+
+    ledstrip.fillRGB(200,200,200);
+
+    //Available Funtions:
+
+    ledstrip.updateBrightness(0.5); //Value must be between 0.0 and 1.0
+    ledstrip.update(); //To write the new Buffer
+    ledstrip.fillRGB(0, 0, 255); //RED, GREEN, BLUE
+    ledstrip.fillHSV(0.0, 100.0, 100.0); //HSV Values
+    ledstrip.allOFF();
+    ledstrip.setPixel(new Color({r: 0, g: 0: b: 255}));
+    ledstrip.setPixelRGB(0, 0, 255); //RED, GREEN, BLUE
+    ledstrip.setPixelHSV(0.0, 100.0, 100.0) //HSV Values
+    ledstrip.setPixelOff(pixelNumber);
+```
+
+Check /examples for usage examples.
+Feel free to contribute.
+
+
+Special thanks to [pmdroid](https://github.com/pmdroid)
+
 
 
 The MIT License (MIT)

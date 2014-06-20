@@ -1,22 +1,17 @@
 {
-  "name": "lpd8806",
-  "version": "0.2.0",
+  "name": "lpd8806-async",
+  "version": "0.2.2",
   "private": false,
-  "scripts": {
-    "start": "node example.js"
-  },
   "dependencies": {
     "spi": "*",
-    "color": "*",
-    "sleep": "*",
-    "socket.io": "*"
+    "color": "*"
   },
-  "description": "LPD8806 Node library for the Raspberry Pi",
+  "description": "Non-blocking LPD8806 NodeJS general library",
   "main": "./lib/LPD8806",
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/pmdroid/LPD8806-node"
+    "url": "https://github.com/muzzley/LPD8806-node"
   },
   "keywords": [
     "SPI",
@@ -28,9 +23,9 @@
     "Raspberry",
     "PI"
   ],
-  "author": "pmdroid",
+  "author": "pmdroid, v0od0oChild",
   "license": "MIT License",
   "bugs": {
-    "url": "https://github.com/pmdroid/LPD8806-node/issues"
+    "url": "https://github.com/muzzley/LPD8806-node/issues"
   }
 }
