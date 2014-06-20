@@ -1,10 +1,15 @@
-LPD8806-node
-============
+# lpd8806-async
 
-Asyncronous lib that implements the LPD8806 protocol.
+Asyncronous Node.js library that implements the LPD8806 protocol.
+
+## Install
+
+    npm install lpd8806-async
+
+## Run
 
 ```
-    var LPD8806 = require('LPD8806');
+    var LPD8806 = require('lpd8806-async');
     var ledstrip = new LPD8806(32, '/dev/spidev1.0');
 
     ledstrip.fillRGB(200,200,200);

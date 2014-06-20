@@ -1,12 +1,12 @@
 {
-  "name": "lpd8806",
-  "version": "0.2.0",
+  "name": "lpd8806-async",
+  "version": "0.2.1",
   "private": false,
   "dependencies": {
     "spi": "*",
     "color": "*"
   },
-  "description": "LPD8806 NodeJS general library",
+  "description": "Non-blocking LPD8806 NodeJS general library",
   "main": "./lib/LPD8806",
   "devDependencies": {},
   "repository": {
@@ -23,7 +23,7 @@
     "Raspberry",
     "PI"
   ],
-  "author": "pmdroid",
+  "author": "pmdroid, v0od0oChild",
   "license": "MIT License",
   "bugs": {
     "url": "https://github.com/pmdroid/LPD8806-node/issues"
