@@ -1,27 +1,17 @@
 LPD8806-node
 ============
 
-- Removed synchronous lib sleep
-- Asynchronous examples
-- Spi accepts options
+Asyncronous lib that implements the LPD8806 protocol.
 
-Forked to be able to work with Intel galileo
-
-Check /examples for usage examples.
-
-
-    npm install git://github.com/v0od0oChild/LPD8806-node.git
-
+```
     var LPD8806 = require('LPD8806');
     var ledstrip = new LPD8806(32, '/dev/spidev1.0');
 
     ledstrip.fillRGB(200,200,200);
 
+    //Available Funtions:
 
-
-    Available Funtions:
-
-    ledstrip.updateBrightness(0.5); //Value must Between 0.0 and 1.0
+    ledstrip.updateBrightness(0.5); //Value must be between 0.0 and 1.0
     ledstrip.update(); //To write the new Buffer
     ledstrip.fillRGB(0, 0, 255); //RED, GREEN, BLUE
     ledstrip.fillHSV(0.0, 100.0, 100.0); //HSV Values
@@ -30,6 +20,15 @@ Check /examples for usage examples.
     ledstrip.setPixelRGB(0, 0, 255); //RED, GREEN, BLUE
     ledstrip.setPixelHSV(0.0, 100.0, 100.0) //HSV Values
     ledstrip.setPixelOff(pixelNumber);
+```
+
+Check /examples for usage examples.
+Feel free to contribute.
+
+
+Special thanks to [pmdroid](https://github.com/pmdroid)
+
+
 
 The MIT License (MIT)
 
